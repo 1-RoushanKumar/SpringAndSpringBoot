@@ -12,7 +12,9 @@ public class FunRestController {
         return "Hello, World!";
     }
 
-    //expose a new endpoint for "workout"
+    // The'@GetMapping("/workout")' annotation maps HTTP GET requests to the root URL ("/workout") to this method.
+    // When someone accesses the root URL, this method will be invoked.
+    // Expose a new endpoint for "workout"
     @GetMapping("/workout")
     public String getDailyWorkout() {
         return "Run a hard 5k!";
