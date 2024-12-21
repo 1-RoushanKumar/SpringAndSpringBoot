@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> <!-- Declares the XML namespace for Thymeleaf -->
+<head>
+    <title>Hello World</title> <!-- Title of the page displayed in the browser tab -->
+</head>
+
+<body>
+<!-- Static content: This line always displays "Hello World of Spring!!" -->
+<p>Hello World of Spring!!</p>
+<br/> <!-- Line break for spacing -->
+
+<!-- Dynamic content rendered using Thymeleaf -->
+<!-- Displays the value of the "studentName" parameter passed to the template -->
+<!-- The expression "${param.studentName}" fetches the request parameter named "studentName" -->
+Student name:<span th:text="${param.studentName}"></span>
+</body>
+</html>

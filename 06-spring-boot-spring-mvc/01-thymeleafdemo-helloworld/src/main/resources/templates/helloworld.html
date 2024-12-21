@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> <!-- Namespace declaration for Thymeleaf -->
+<head>
+    <title>Thymeleaf Demo</title> <!-- Title of the page -->
+    <!-- Thymeleaf's way of adding CSS file -->
+    <link rel="stylesheet" th:href="@{/css/demo.css}"/>
+    <!-- Uses Thymeleaf expression to dynamically load the CSS file -->
+</head>
+
+<body>
+<!-- Thymeleaf syntax to display dynamic data, here theDate variable will be replaced by its value -->
+<p th:text="'Time on the server is '+ ${theDate}" class="funny"/> <!-- Server-side variable theDate displayed -->
+</body>
+</html>

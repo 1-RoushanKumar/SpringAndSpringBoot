@@ -11,8 +11,8 @@ public class MycoolappApplication {
 }
 //First
 // do this before adding security dependencies to the pom.xml or comment the security dependencies from the pom.xml
-////when we use actuator some time, we don't want to expose all the information
 
+//when we use actuator some time, we don't want to expose all the information
 
 //Second
 // go to pom.xml and add spring-boot-starter-security

@@ -19,5 +19,5 @@ public class MycoolappApplication {
 //we need to add exposure endpoints to the application properties.
 //go to application properties to see the properties
 
-//Second to expose all the actuator endpoints over HTTP, we use wildcard "*"
+//Third: to expose all the actuator endpoints over HTTP, we use wildcard "*"
 //there are more different types of actuator you can see online.

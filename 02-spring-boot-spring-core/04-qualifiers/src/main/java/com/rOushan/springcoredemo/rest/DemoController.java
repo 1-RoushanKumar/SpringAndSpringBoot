@@ -32,6 +32,7 @@ public class DemoController {
     public DemoController(@Qualifier("trackCoach") Coach mycoach) {
         this.mycoach = mycoach; // Assigning the injected Coach bean to the private field
     }
+    //We can use the @Qualifier with setter injection also.
 
     /**
      * Handle HTTP GET requests for the "/dailyWorkout" endpoint.

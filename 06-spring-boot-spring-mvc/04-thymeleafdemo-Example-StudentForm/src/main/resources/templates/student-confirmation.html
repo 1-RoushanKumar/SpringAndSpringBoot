@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Confirmation</title>
+</head>
+
+<body>
+<h3>Student Confirmation</h3>
+
+The Student is confirmed: <span th:text="${student.firstName} +' ' +${student.lastName}"/>
+<br><br>
+Country:<span th:text="${student.country}"/>
+
+<br><br>
+Favorite Programming Language:<span th:text="${student.favoriteLanguage}"/>
+
+<br><br>
+<!-- 1st way -->
+<!--Favorite Operating System:<span th:text="${student.favoriteOperatingSystem}"/>-->
+
+<!-- 2nd way adding bullets(ie using <ul>) -->
+Favorite Operating System:
+<ul>
+    <li th:each="tempSystem:${student.favoriteOperatingSystem}" th:text="${tempSystem}"/>
+</ul>
+
+
+</body>
+</html>
